@@ -1,9 +1,3 @@
-@import "_bootstrap-sprockets.scss";
-@import "_bootstrap.scss";
-
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
 
 /* universal */
 
@@ -41,7 +35,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #999999;
 }
 
 p {
@@ -72,12 +66,12 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
+  border-top: 1px solid #999999;
+  color: white;
   a {
-    color: $gray;
+    color: #999;
     &:hover {
-      color: $gray-darker;
+      color: #222;
     }
   }
   small {
@@ -93,7 +87,6 @@ footer {
   }
 }
 
-$gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -103,13 +96,6 @@ $gray-medium-light: #eaeaea;
 
   /* miscellaneous */
 
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
 
 /* Users index */
 
@@ -119,7 +105,7 @@ $gray-medium-light: #eaeaea;
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid #555;
   }
 }
 
@@ -145,7 +131,7 @@ $gray-medium-light: #eaeaea;
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: #999999;
     display: block;
     margin-left: 60px;
   }
@@ -177,7 +163,7 @@ span.image {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid $gray-lighter;
+    border-left: 1px solid #999999;
     color: gray;
     &:first-child {
       padding-left: 0;

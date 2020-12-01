@@ -1,7 +1,10 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
 
-<%= will_paginate %>
+<%= will_paginate @clients,
+                  renderer: WillPaginate::ActionView::BootstrapLinkRenderer,
+                  list_classes: %w(pagination justify-content-center) %>
+
 
 <ul class="users">
 
@@ -18,4 +21,7 @@ Rails automatically iterates through them and renders each one with the _user.ht
   <%# end %>-->
 </ul>
 
-<%= will_paginate %>
+<%= will_paginate @clients,
+                  renderer: WillPaginate::ActionView::BootstrapLinkRenderer,
+                  list_classes: %w(pagination justify-content-center) %>
+

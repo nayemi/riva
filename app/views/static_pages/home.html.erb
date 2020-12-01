@@ -20,17 +20,18 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome</h1>
+    <h1>Welcome to Riva</h1>
 
     <h2>
-      This is the home page for the
-      <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
+      RIVA is a micro blogging service software built with
+      <br>
+
+      <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+                  "https://rubyonrails.org/" %>
     </h2>
 
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Join now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
-              "https://rubyonrails.org/" %>
+
 <% end %>
